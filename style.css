@@ -3,11 +3,6 @@ html, body, div {/*-- zeros the margins and padding on containers --*/
 	margin: 0;
 	padding: 0;
 }
-body {
-	display: block;/*-- allows margin:auto to function --*/
-	width: 90%; /*-- supplies 5% margin on either side --*/
-	margin: 0 auto; /*-- sets top margin to 0 and left and right to auto --*/
-}
 div, footer {
 	margin: 0 -2px; /*-- corrects spacing bug --*/
 }
@@ -17,6 +12,11 @@ div, footer {
 h1, h2, h3, h4, h5, h6, p { /*-- zeros the margin and paddings on all text elements --*/
 	margin: 0;
 	padding: 0;
+}
+
+.flex-wrapper {
+	display: inline-flex;
+	flex-flow: row wrap;
 }
 
 /*-- Panel Styles --*/
